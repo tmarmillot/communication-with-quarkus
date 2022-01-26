@@ -38,5 +38,6 @@ jobs:
        with:
          push: true
          file: src/main/docker/Dockerfile.native
+         context: ${{ github.workspace }}
          platforms: ${{ env.PLATFORMS }}
          tags: ghcr.io/tmarmillot/communication-with-quarkus:latest
